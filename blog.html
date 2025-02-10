@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bronze sculpture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="top-warp">
+                <div class="top-row">
+                    <div class="phone_num">
+                        <span>E-MAIL: xintuostatue@outlook.com</span>
+                        <span>CALL: +86 198 3129 0383</span>
+                    </div>
+                    <div class="search">
+                        <form action="#" method="get">
+                            <input type="text" class="search_input" placeholder="Input">
+                            <input type="submit" class="search_btn" value="Search">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="top_nav" id="nav">
+                    <div class="logo">
+                        <img src="img/logo.png" loading="lazy" alt="logo">
+                    </div>
+                    <ul class="posrel">
+                        <li class="active">
+                            <a href="index.html" title="Home">HOME</a>
+                        </li>
+                        <li @mouseenter="show" @mouseleave="hide">
+                            <a href="product.html" title="Scoulpture Product">
+                                PRODUCT
+                                <span class="arrow"></span>
+                            </a>
+                            <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
+                                <li v-for="(item,index) in navList" :key="index + 1">
+                                    <a :href="url + item.productClass">{{ item.productClass }}</a>
+                                    <ul>
+                                        <li v-for="(item,index) in item.productList"><a :href="url + item">{{ item }}</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html?key=fountain" title="Product">FOUNTAIN</a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html"  title="About Us">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" title="Blog">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="Contact Us">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content son_con">
+        <div class="clearfix"></div>
+        <div id="top_bg" class="top_bg">
+            <img src="img/topbg.jpg">
+        </div>
+        <div class="warper">
+            <div class="middle">
+                <div id="middle_top" class="middle_top">
+                    <div class="middle_img">
+                        <img src="img/about/about.png">
+                    </div>
+                    <div class="module_con">
+                        <h1> {{ title }} </h1>
+                        <p>
+                            We have professional designers and artists of Bronze Sculpture, accept any custom sculptures based on your designs or requirements. Factory direct sale. Competitive price. Global Shipping. Bronze Sculpture is our passion! Creating artworks to reflect more stories.
+                        </p>
+                    </div>
+                </div>
+                <div class="middle_nav">
+                    <div class="fl">
+                        <div class="crumbs">
+                            <span> Home » </span>
+                            <span>About Us</span>
+                        </div>
+                    </div>
+                    <div class="search_r">
+                        <form action="/" method="get" class="search_form">
+                            <input type="text" name="s" id="s" title="search" placeholder="input..." class="search_input">
+                            <input type="submit" value="Search" class="search_btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="leftsidebar">
+                    <h3>PRODUCT</h3>
+                    <div id="nav-list" class="list">
+                        <ul>
+                            <li v-for="(item, index) in navList">
+                                <p>
+                                    <a href="">{{ item.productClass }}</a>
+                                </p>
+                                <div class="menu_body">
+                                    <a v-for="(item, index) in item.productList" :href="'product.html?key=' + item">
+                                        {{ item }}
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="list0">
+                        <h3>HOT PRODUCTS</h3>
+                        <div class="aside-parts-slide">
+                            <ul class="son_imgs">
+                                <li class="son_active_img">
+                                    <img src="img/home/1.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/2.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/3.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/4.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                            </ul>
+                            
+                            <ul class="son_dots">
+                                <li class="active_dots"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <div class="contact_inner">
+                            E-mail:
+                            <a href="">xintuostatue@outlook.com</a>
+                            <br>
+                            Sales Tel: +86 19831290383
+                            <br>
+                            Add:Tangxian County, Hebei Province, China. 
+                        </div>
+                    </div>
+                    <div class="sub_info">
+                        <a href="" title="contact" class="subinfo01">SEND MESSAGES </a>
+                        <a target="_blank" class="subinfo02">GET QUOTE</a>
+                    </div>
+                </div>
+                <div class="rightsidebar" id="productList">
+                    <ul>
+                        <li v-for="(item,index) in pageList" class="news_li">
+                            <div class="news_li_pic">
+                                <a :href="url + item.id + parameter + item.name">
+                                    <img :src="item.img[0]" :alt="item.name">
+                                </a>
+                            </div>
+                            <div class="news_li_text">
+                                <h2>
+                                    <a :href="url + item.id + parameter + item.name" :title="item.name" target="_blank">
+                                        {{ item.name }}
+                                    </a>
+                                </h2>
+                                <p>
+                                    item num: {{ item.num }}
+                                    <br>
+                                    price: {{ item.price }}
+                                    <br>
+                                    Material: {{ item.Material }}
+                                    <br>
+                                    delivery: {{ item.delivery }}
+                                    <br>
+                                    Payment: {{ item.Payment }}
+                                    <br>
+                                    PackageIn: {{ item.PackageIn }}
+                                    <br>
+                                    PackageOut: {{ item.PackageOut }}
+                                    <br>
+                                    Categories: {{ item.Categories }}
+                                </p>
+                                <a class="open-modal l-btn btn-o">Get Price</a>
+                                <a class="l-btn" href="mailto:sales@you-fine.com">Email Us</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div class="pager">
+                        <ul>
+                            <li v-for="lis in pageNum" @click="searchPage(lis)">{{ lis }}</li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="sns">
+                <div class="warp">
+                    <div class="bot_social">
+                        <div class="icons">
+                            <a href="https://www.facebook.com" title="facebook" target="_blank" class="icon01">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.youtube.com" title="youtube" target="_blank" class="icon02">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" title="linkedin" target="_blank" class="icon03">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.instagram.com" title="instagram" target="_blank" class="icon04">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" title="pinterest" target="_blank" class="icon05">
+                                <i class="lazyloaded"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_con">
+                <div class="our_product">
+                    <h2 class="footer_menu_title">PRODUCT</h2>
+                    <ul>
+                        <li class="our_product_item"><a href="detail.html">Bronze Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Metal Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fiberglass Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fountain Construction</a></li>
+                        <li class="our_product_item"><a href="">Marble Carving Sculpture</a></li>
+                    </ul>
+                </div>
+                <div class="help_menu">
+                    <h2 class="footer_menu_title">GET A QUOTE</h2>
+                    <form action="#">
+                        <input type="text" class="account_name" placeholder="Name:"/>
+                        <input type="email" class="account_email" placeholder="Email:"/>
+                        <textarea name="" id="message_text" placeholder="Message:"></textarea>
+                        <input type="submit" value="SEND" class="sub"/>
+                    </form>
+                </div>
+                <div class="Contact_us">
+                    <h2 class="footer_menu_title">OUR CONTACTS</h2>
+                    <p class="xintuo_address">Tangxian Xintuo Import And Export Trading Co., Ltd.</p>
+                    <p class="myPhone">
+                        TEL:+86 19831290383
+                    </p>
+                    <p class="myEmail">
+                        E-MAIL:xintuostatue@outlook.com
+                    </p>
+                    <p class="myAddress">
+                        ADD:Tangxian County, Hebei Province, China.
+                    </p>
+                </div>
+            </div>
+            <div class="footer_wrap">
+                Copyright 2024 Tangxian Xintuo Import And Export Trading Co., Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/productLeftNav.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/productlist.js"></script>
+</body>
+</html>
