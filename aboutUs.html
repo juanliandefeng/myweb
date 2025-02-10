@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .warper{
+            z-index: 400;
+        }
+        .upper{
+            text-transform: uppercase;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="top-warp">
+                <div class="top-row">
+                    <div class="phone_num">
+                        <span>E-MAIL: xintuostatue@outlook.com</span>
+                        <span>CALL: +86 198 3129 0383</span>
+                    </div>
+                    <div class="search">
+                        <form action="#" method="get">
+                            <input type="text" class="search_input" placeholder="Input">
+                            <input type="submit" class="search_btn" value="Search">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="top_nav" id="nav">
+                    <div class="logo">
+                        <img src="img/logo.png" loading="lazy" alt="logo">
+                    </div>
+                    <ul class="posrel">
+                        <li class="active">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li @mouseenter="show" @mouseleave="hide">
+                            <a href="index.html">
+                                PRODUCTS
+                                <span class="arrow"></span>
+                            </a>
+                            <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
+                                <li v-for="(item,index) in navList" :key="index + 1">
+                                    <a href="">{{ item.productClass }}</a>
+                                    <ul>
+                                        <li v-for="(item,index) in item.productList"><a>{{ item }}</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">FOUNTAIN</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="container" class="son_con">
+        <div class="clearfix"></div>
+        <div class="top_bg">
+            <img src="img/topbg.jpg">
+        </div>
+        <div class="warper">
+            <div class="middle">
+                <div class="middle_top">
+                    <div class="middle_img">
+                        <img src="img/about/about.png">
+                    </div>
+                    <div class="module_con">
+                        <h1 class="upper"> About Us </h1>
+                        <p>Xin Tuo Art Co., Ltd. is located in Tangxian County, Hebei Province, which is known as The Sculpture Hometown of China. Our factory was founded in 1983, which is specialized in marble carving sculptures,bronze sculptures,stainless steel sculptures,iron products.</p>
+                    </div>
+                </div>
+                <div class="middle_nav">
+                    <div class="fl">
+                        <div class="crumbs">
+                            <span> Home » </span>
+                            <span>About Us</span>
+                        </div>
+                    </div>
+                    <div class="search_r">
+                        <form action="/" method="get" class="search_form">
+                            <input type="text" name="s" id="s" title="search" placeholder="input..." class="search_input">
+                            <input type="submit" value="Search" class="search_btn">
+                        </form>
+                    </div>
+                </div>
+                <div class="leftsidebar">
+                    <h3>ABOUT</h3>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="" title="Company Profile">Company Profile</a>
+                            </li>
+                            <li>
+                                <a href="" title="Office Photos">Process</a>
+                            </li>
+                            <li>
+                                <a href="" title="Customer">Customer</a>
+                            </li>
+                            <li>
+                                <a href="" title="Customer Feedback">Customer Feedback</a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="list0">
+                        <h3>HOT PRODUCTS</h3>
+                        <div class="aside-parts-slide">
+                            <ul class="son_imgs">
+                                <li class="son_active_img">
+                                    <img src="img/home/1.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/2.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/3.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                                <li>
+                                    <img src="img/home/4.jpg" alt="Hot Statue" loading="lazy">
+                                </li>
+                            </ul>
+                            
+                            <ul class="son_dots">
+                                <li class="active_dots"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact Us</h3>
+                        <div class="contact_inner">
+                            E-mail:
+                            <a href="">xintuostatue@outlook.com</a>
+                            <br>
+                            Sales Tel: +86 19831290383
+                            <br>
+                            Add:Tangxian County, Hebei Province, China. 
+                        </div>
+                    </div>
+                    <div class="sub_info">
+                        <a href="" title="contact" class="subinfo01">SEND MESSAGES </a>
+                        <a target="_blank" class="subinfo02">GET QUOTE</a>
+                    </div>
+                </div>
+                <div class="rightsidebar">
+                    <div class="rightsidebar_con">
+                        <h3>Tangxian Xintuo Import And Export Trading Co., Ltd.</h3>
+                        <img src="img/about/company.jpg" alt="our_company">
+                        <h3>Enable everyone to have affordable art sculptures</h3>
+                        <p>Tangxian Xintuo Import and Export Trading Co., Ltd., also named Tangxian Baocheng Sculpture Crafts Manufacturing Co., Ltd., is located in Tangxian, the hometown of bronze sculpture. We have over 20 years of experience in producing and making sculptures. So far, there are tens of thousands of sculpture styles for you to choose from, meeting your decoration needs in different spaces.
+                            We also have a professional 3D design and clay sculpture production team, which can create 1:1 sculptures based on the pictures or CAD provided by you. Throughout the entire design and production process, we will follow up on the progress of each step, coordinate your needs in a timely manner, and ultimately achieve your satisfactory results.
+                            Established in April 2014, the company has a professional team of designers, molds, casting, welding, polishing, and painting, as well as excellent designers and artists. Through unremitting efforts, our products have evolved from a single bronze sculpture to a variety of material sculptures and handicrafts. And established an international trade department in 2010 to undertake international order business.
+                            Sales and after-sale service team, 3D design and print team, production team, Quality inspection team
+                        </p>
+                        <img src="img/about/people.jpg" alt="our_company">
+                        <h3>Our Team</h3>
+                        <p>
+                            Xintuo Sculpture Company has a versatile team that covers sales and after-sales service, 3D design and printing, production, and quality inspection. We can not only accurately understand customer needs, provide professional consultation and customized solutions, but also efficiently transform creativity into high-quality artworks through advanced technology and exquisite craftsmanship. Every piece of work undergoes strict quality control to ensure flawless delivery. We are committed to providing customers with excellent artistic enjoyment and service experience.
+                        </p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                     <div class="md_con">
+                        <div class="md_bd">
+                            <div class="md_pro_cont">
+                                <div class="md_pro_tel">+86 19831290383</div>
+                                <div class="md_pro_mail">
+                                    <a href="">sales@xin-tuo.com</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <form action="/" method="post" name="myforms">
+                                <input type="hidden" name="lang" value="en">
+                                <label>
+                                    <span> Your Name:</span>
+                                    <input type="text" name="name" placeholder="Name">
+                                </label>
+                                <label>
+                                    <span> Your E-mail:</span>
+                                    <input type="text" name="email" placeholder="E-mail">
+                                    <i>*</i>
+                                </label>
+                                <label>
+                                    <span> Tel / WhatsApp:</span>
+                                    <input type="text" name="tel" placeholder=" Tel / WhatsApp:">
+                                </label>
+                                <label>
+                                    <label for="message">
+                                        <span> Content</span>
+                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="the sculpture you prefer or requirements"></textarea>
+                                        <i>*</i>
+                                    </label>
+                                    <div class="tc">
+                                        <input type="submit" name="submit2" id="submit2" value="Send A Message">
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                     </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="sns">
+                <div class="warp">
+                    <div class="bot_social">
+                        <div class="icons">
+                            <a href="https://www.facebook.com" title="facebook" target="_blank" class="icon01">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.youtube.com" title="youtube" target="_blank" class="icon02">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" title="linkedin" target="_blank" class="icon03">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.instagram.com" title="instagram" target="_blank" class="icon04">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" title="pinterest" target="_blank" class="icon05">
+                                <i class="lazyloaded"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_con">
+                <div class="our_product">
+                    <h2 class="footer_menu_title">PRODUCT</h2>
+                    <ul>
+                        <li class="our_product_item"><a href="detail.html">Bronze Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Metal Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fiberglass Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fountain Construction</a></li>
+                        <li class="our_product_item"><a href="">Marble Carving Sculpture</a></li>
+                    </ul>
+                </div>
+                <div class="help_menu">
+                    <h2 class="footer_menu_title">GET A QUOTE</h2>
+                    <form action="mailto:1140439525@qq.com" method="POST" enctype="text/plain">
+                        <input type="text" name="name" class="account_name" placeholder="Name:"/>
+                        <input type="email" name="email" class="account_email" placeholder="Email:"/>
+                        <textarea name="message" id="message_text" placeholder="Message:"></textarea>
+                        <input type="submit" value="SEND" class="sub"/>
+                    </form>
+                </div>
+                <div class="Contact_us">
+                    <h2 class="footer_menu_title">OUR CONTACTS</h2>
+                    <p class="xintuo_address">Tangxian Xintuo Import And Export Trading Co., Ltd.</p>
+                    <p class="myPhone">
+                        TEL:+86 19831290383
+                    </p>
+                    <p class="myEmail">
+                        E-MAIL:xintuostatue@outlook.com
+                    </p>
+                    <p class="myAddress">
+                        ADD:Tangxian County, Hebei Province, China.
+                    </p>
+                </div>
+            </div>
+            <div class="footer_wrap">
+                Copyright 2024 Tangxian Xintuo Import And Export Trading Co., Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/son_slider.js"></script>
+</body>
+</html>
