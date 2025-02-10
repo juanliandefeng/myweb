@@ -1,0 +1,223 @@
+.box{
+    width: 100%;
+    position: relative;
+    height: 39.1vw;
+    background-color: #2e2e2e;
+  }
+   .images_box li{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+   .images_box{
+    position: relative;
+    height: 100%;
+  }
+   .images_box li.active{
+    opacity: 1;
+    height: auto;
+    transition-duration: 1500ms;
+  }
+   .box img{
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  .lis{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  .lis li{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    border: 2px solid black;
+    list-style-type: none;
+  }
+  .lis li.active{
+    background-color: aqua;
+  }
+  .btn span{
+    position: absolute;
+    top: 47%;
+    font-size: 35px;
+    font: 700 70px / normal simsun;
+    text-decoration: none;
+  }
+  .prev{
+    left: 0;
+  }
+  .next{
+    right: 0;
+  }
+
+  /* 热门展示区域 */
+  
+  .hot_show{
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hot_showh2{
+    padding: 30px 0 15px;
+    font-size: 3.7em;
+    color: #d45635;
+    font-family: impactregular;
+  }
+  .hot_showh3{
+    padding: 0 0 20px;
+    color: #d45635;
+  }
+  .show_list{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .show_list li{
+    border: 5px solid #62430d;
+    width: 30%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: inline;
+    float: left;
+    margin: 15px 1.5% 25px;
+  }
+  .lis_box{
+    width: auto;
+    height: auto;
+    position: relative;
+    
+  }
+  .lis_box a{
+    display: block;
+  }
+  .lis_text{
+    z-index: 99;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    color: #fff;
+  }
+  .lis_text:hover{
+    opacity: 0.9;
+    background: rgba(22, 22, 22, .9);
+    transition: all 300ms ease;
+  }
+  .lis_text h2{
+    font-size: 18px;
+    padding: 20px 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .lis_text h3{
+    font-size: 14px;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 18px;
+  }
+  /* feedback */
+  .module_title{
+    color: #d45635;
+    max-width: 1270px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px 0 30px;
+    background-size: contain;
+  }
+  .module_title h2{
+    font-size: 3.7em;
+    font-family: impactregular;
+    color: #d55635;
+    text-transform: uppercase;
+  }
+  .module_title01 p{
+    font-size: 17px;
+    color: #fdfdfd;
+    padding: 15px 0;
+  }
+  /* our quality */
+  .our_quality{
+    width: 100%;
+    padding: 2% 0;
+    background: url(../img/home/m.jpg) center;
+    background-size: cover;
+  }
+  .our_quality h2{
+    font-size: 5.2em;
+    color: #d55635;
+    padding: 0 0 15px;
+    font-family: impactregular;
+  }
+  .our_quality p{
+    width: 75%;
+    color: #e4e4e4;;
+    line-height: 36px;
+    padding: 15px 0 15px;
+    font-size: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  .our_quality .quality_more a{
+    width: 200px;
+    height: 76px;
+    line-height: 76px;
+    padding-left: 30px;
+    padding-right: 70px;
+    background: #d55635 url(../img/home/bg_more.jpg) right center no-repeat;
+    color: #fff;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+    display: block;
+  }
+  /* Sculpture Gallery */
+  .middle02{
+    width: 100%;
+    background-color: #2a2f33;
+    padding: 0 0 20px;
+  }
+  .module_title{
+    color: #d45635;
+    max-width: 1270px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px 0 30px;
+  }
+  .module_title p{
+    color: #fff;
+  }
+  .botbanner{
+    width: 1600px;
+    min-width: 1200px;
+    margin: 0 auto;
+  }
+  .botbanner_box{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  .banner_scroll{
+    position: relative;
+    width: 9999px;
+  }
+  .banner_scroll li{
+    width: 322px;
+    height: 420px;
+    float: left;
+  }
+  .banner_scroll li img{
+    width: 100%;
+  }
