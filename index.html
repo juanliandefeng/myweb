@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronze Statue</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="top-warp">
+                <div class="top-row">
+                    <div class="phone_num">
+                        <span>E-MAIL: xintuostatue@outlook.com</span>
+                        <span>CALL: +86 198 3129 0383</span>
+                    </div>
+                    <div class="search">
+                        <form action="#" method="get">
+                            <input type="text" class="search_input" placeholder="Input">
+                            <input type="submit" class="search_btn" value="Search">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="top_nav" id="nav">
+                    <div class="logo">
+                        <img src="img/logo.png" loading="lazy" alt="logo">
+                    </div>
+                    <ul class="posrel">
+                        <li class="active">
+                            <a href="#" title="Home">HOME</a>
+                        </li>
+                        <li @mouseenter="show" @mouseleave="hide">
+                            <a href="product.html" title="Scoulpture Product">
+                                PRODUCT
+                                <span class="arrow"></span>
+                            </a>
+                            <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
+                                <li v-for="(item,index) in navList" :key="index + 1">
+                                    <a :href="url + item.productClass">{{ item.productClass }}</a>
+                                    <ul>
+                                        <li v-for="(item,index) in item.productList"><a :href="url + item">{{ item }}</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html?key=fountain" title="Product">FOUNTAIN</a>
+                        </li>
+                        <li>
+                            <a href="aboutUs.html"  title="About Us">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" title="Blog">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" title="Contact Us">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 内容 -->
+    <div id="container" class="body_con">
+        <div class="subbanner">
+            <div class="box">
+                <div class="images_box">
+                  <ul>
+                    <li class="active"><img src="img/1.jpg"/></li>
+                    <li><img src="img/2.jpg" loading="lazy"/></li>
+                    <li><img src="img/1.jpg" loading="lazy"/></li>
+                    <li><img src="img/2.jpg" loading="lazy"/></li>
+                  </ul>
+                  <div class="btn">
+                    <span class="prev"> < </span>
+                    <span class="next"> > </span>
+                  </div>
+                </div>
+                <div class="lis">
+                  <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="hot_show to-upper" id="hot">
+            <h2 class="hot_showh2">HOT SCULPTURES</h2>
+            <H3 class="hot_showh3">YouFine Sculpture supply custom marble, bronze and metal sculptures, Provide one-stop solution for all kinds of sculpture projects</H3>
+            <div>
+                <ul class="show_list">
+                    <li v-for="(item,index) in hotList" :key="index">
+                        <div class="lis_box">
+                            <a href="#">
+                                <img :src="item.url" alt="">
+                                <div class="lis_text">
+                                    <h2>{{ item.title }}</h2>
+                                    <h3>{{ item.text }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- FEEDBACK -->
+         <div class="feedback">
+            <div class="warper">
+                <div class="module_title">
+                    <h2 class="to-upper">Feedback</h2>
+                    <p>These reviews are feedback from YOUFINE real customers, and each time the service is recognized by the customer, the service is until the customer is satisfied.</p>
+                </div>
+                <ul>
+                    <li class="rec_li">
+                        <img src="" alt="">
+                    </li>
+                </ul>
+             </div>
+         </div>
+        <!-- QUALITY IS OUR LIFE -->
+        <div class="our_quality">
+            <div class="warper">
+                <h2 class="to-upper">Quality is Our Life</h2>
+                <p>Here at Xin Tuo, you could see our artists devoted all their energy to detailed marble carvings and metal sculptures. Masters always work hard to pursue the art perfect, no matter hot or cold, as Quality is our Life.We are special in marble sculpture,fountains,bronze sculptures,horse statues,Stainless steel sculptures,etc over 40 years.</p>
+                <div class="quality_more">
+                    <a href="" class="to-upper">more+</a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- Sculpture Gallery -->
+        <div class="middle02">
+            <div class="module_title">
+                <h2>Xin Tuo Sculpture Gallery</h2>
+                <p>Here at Xin Tuo, We own large quantity of Stocks and Models to choose</p>
+            </div>
+            <div class="botbanner">
+                <div class="botbanner_box">
+                    <ul class="banner_scroll"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="sns">
+                <div class="warp">
+                    <div class="bot_social">
+                        <div class="icons">
+                            <a href="https://www.facebook.com" title="facebook" target="_blank" class="icon01">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.youtube.com" title="youtube" target="_blank" class="icon02">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.linkedin.com" title="linkedin" target="_blank" class="icon03">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.instagram.com" title="instagram" target="_blank" class="icon04">
+                                <i class="lazyloaded"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" title="pinterest" target="_blank" class="icon05">
+                                <i class="lazyloaded"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_con">
+                <div class="our_product">
+                    <h2 class="footer_menu_title">PRODUCT</h2>
+                    <ul>
+                        <li class="our_product_item"><a href="detail.html">Bronze Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Metal Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fiberglass Sculpture</a></li>
+                        <li class="our_product_item"><a href="">Fountain Construction</a></li>
+                        <li class="our_product_item"><a href="">Marble Carving Sculpture</a></li>
+                    </ul>
+                </div>
+                <div class="help_menu">
+                    <h2 class="footer_menu_title">GET A QUOTE</h2>
+                    <form action="#">
+                        <input type="text" class="account_name" placeholder="Name:"/>
+                        <input type="email" class="account_email" placeholder="Email:"/>
+                        <textarea name="" id="message_text" placeholder="Message:"></textarea>
+                        <input type="submit" value="SEND" class="sub"/>
+                    </form>
+                </div>
+                <div class="Contact_us">
+                    <h2 class="footer_menu_title">OUR CONTACTS</h2>
+                    <p class="xintuo_address">Tangxian Xintuo Import And Export Trading Co., Ltd.</p>
+                    <p class="myPhone">
+                        TEL:+86 19831290383
+                    </p>
+                    <p class="myEmail">
+                        E-MAIL:xintuostatue@outlook.com
+                    </p>
+                    <p class="myAddress">
+                        ADD:Tangxian County, Hebei Province, China.
+                    </p>
+                </div>
+            </div>
+            <div class="footer_wrap">
+                Copyright 2024 Tangxian Xintuo Import And Export Trading Co., Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/hot.js"></script>
+    <script src="js/botslider.js"></script>
+</body>
+</html>
