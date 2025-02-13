@@ -39,9 +39,9 @@
                             </a>
                             <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
                                 <li v-for="(item,index) in navList" :key="index + 1">
-                                    <a href="">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?key=' + item.productClass">{{ item.productClass }}</a>
                                     <ul>
-                                        <li v-for="(item,index) in item.productList"><a>{{ item }}</a></li>
+                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item">{{ item }}</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -102,7 +102,7 @@
                         <ul>
                             <li v-for="(item, index) in navList">
                                 <p>
-                                    <a href="">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?key=' + item.productClass">{{ item.productClass }}</a>
                                 </p>
                                 <div class="menu_body">
                                     <a v-for="(item, index) in item.productList" :href="'product.html?key=' + item">
@@ -194,7 +194,9 @@
                     <div class="clearfix"></div>
                     <div class="pager">
                         <ul>
-                            <li v-for="lis in pageNum" @click="searchPage(lis)">{{ lis }}</li>
+                            <li v-for="lis in pageNum" @click="searchPage(lis)" :class="{ active: currentPage == lis}">
+                                {{ lis }}
+                            </li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -234,11 +236,21 @@
                 <div class="our_product">
                     <h2 class="footer_menu_title">PRODUCT</h2>
                     <ul>
-                        <li class="our_product_item"><a href="detail.html">Bronze Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Metal Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Fiberglass Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Fountain Construction</a></li>
-                        <li class="our_product_item"><a href="">Marble Carving Sculpture</a></li>
+                        <li class="our_product_item">
+                            <a href="product.html?key=bronze Sculpture">Bronze Sculpture</a>
+                        </li>
+                        <li class="our_product_item">
+                            <a href="product.html?key=Metal Sculpture">Metal Sculpture</a>
+                        </li>
+                        <li class="our_product_item">
+                            <a href="product.html?key=Fiberglass Sculpture">Fiberglass Sculpture</a>
+                        </li>
+                        <li class="our_product_item">
+                            <a href="product.html?key=Fountain Construction">Fountain Construction</a>
+                        </li>
+                        <li class="our_product_item">
+                            <a href="product.html?key=Marble Carving Sculpture">Marble Carving Sculpture</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="help_menu">
