@@ -493,9 +493,19 @@ body{
 }
 .pager li {
     float: left;
-    padding: 3px 5px;
-    background-color: #b14c32;
+    padding: 5px 9px;
+    box-sizing: border-box;
     cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+.pager li:hover {
+    background-color: #fe7201;
+    color: #fff;
+}
+.pager .active {
+    background-color: #fe7201;
     color: #fff;
 }
 /* form */
