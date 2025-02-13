@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bronze Statue</title>
+    <meta name="decoration" content="sintsculpture,a manufacturer specializing in bronze casting, produces various large or small bronze Buddha statues, human figures, or animal sculptures. We have a professional team and mature experience">
+    <title>SintSculpture</title>
+    <meta name="keywords" content="Bronze Sculpture,Animal Statue,Life Size,Buddha Statue,Bronze Horse Statues">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
@@ -98,11 +100,11 @@
                 <ul class="show_list">
                     <li v-for="(item,index) in hotList" :key="index">
                         <div class="lis_box">
-                            <a href="#">
-                                <img :src="item.url" alt="">
+                            <a :href=" 'detail.html?id=' + item.id">
+                                <img :src="item.img[0]" alt="item.name" loading="lazy">
                                 <div class="lis_text">
-                                    <h2>{{ item.title }}</h2>
-                                    <h3>{{ item.text }}</h3>
+                                    <h2>{{ item.num }}</h2>
+                                    <h3>{{ item.introduction[0] }}</h3>
                                 </div>
                             </a>
                         </div>
@@ -177,11 +179,11 @@
                 <div class="our_product">
                     <h2 class="footer_menu_title">PRODUCT</h2>
                     <ul>
-                        <li class="our_product_item"><a href="detail.html">Bronze Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Metal Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Fiberglass Sculpture</a></li>
-                        <li class="our_product_item"><a href="">Fountain Construction</a></li>
-                        <li class="our_product_item"><a href="">Marble Carving Sculpture</a></li>
+                        <li class="our_product_item"><a href="product.html?key=bronze Sculpture">Bronze Sculpture</a></li>
+                        <li class="our_product_item"><a href="product.html?key=Metal Sculpture">Metal Sculpture</a></li>
+                        <li class="our_product_item"><a href="product.html?key=Fiberglass Sculpture">Fiberglass Sculpture</a></li>
+                        <li class="our_product_item"><a href="product.html?key=Fountain Construction">Fountain Construction</a></li>
+                        <li class="our_product_item"><a href="product.html?key=Marble Carving Sculpture">Marble Carving Sculpture</a></li>
                     </ul>
                 </div>
                 <div class="help_menu">
@@ -214,6 +216,7 @@
     </footer>
     <script src="js/vue.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/header.js"></script>
     <script src="js/index.js"></script>
     <script src="js/hot.js"></script>
