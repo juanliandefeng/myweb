@@ -143,10 +143,10 @@ var tongdata = [
             'We are committed to providing you with unique sculpture customization services. Whether you are seeking an artwork that showcases your personal taste or hoping to add iconic landscapes to your business or public space, our professional team can carefully design and produce sculptures that meet your specific needs and vision.'
         ],
         img: [
-            'img/bronze/Doe1.jpg',
-            'img/bronze/Doe2.jpg',
-            'img/bronze/Doe3.jpg',
-            'img/bronze/Doe4.jpg',
+            'img/bronze/doe1.jpg',
+            'img/bronze/doe2.jpg',
+            'img/bronze/doe3.jpg',
+            'img/bronze/doe4.jpg',
         ]
     },
     {   
@@ -168,10 +168,10 @@ var tongdata = [
             'We are committed to providing you with unique sculpture customization services. Whether you are seeking an artwork that showcases your personal taste or hoping to add iconic landscapes to your business or public space, our professional team can carefully design and produce sculptures that meet your specific needs and vision.'
         ],
         img: [
-            'img/bronze/Elephant-1.jpg',
-            'img/bronze/Elephant-2.jpg',
-            'img/bronze/Elephant-3.jpg',
-            'img/bronze/Elephant-4.jpg',
+            'img/bronze/elephant-1.jpg',
+            'img/bronze/elephant-2.jpg',
+            'img/bronze/elephant-3.jpg',
+            'img/bronze/elephant-4.jpg',
         ]
     },
     {   
