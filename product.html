@@ -34,21 +34,21 @@
                             <a href="index.html" title="Home">HOME</a>
                         </li>
                         <li @mouseenter="show" @mouseleave="hide">
-                            <a href="#">
+                            <a href="product.html">
                                 PRODUCTS
                                 <span class="arrow"></span>
                             </a>
                             <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
                                 <li v-for="(item,index) in navList" :key="index + 1">
-                                    <a :href=" 'product.html?key=' + item.productClass">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?key=' + item.productClass + '&type=1' ">{{ item.productClass }}</a>
                                     <ul>
-                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item">{{ item }}</a></li>
+                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item + '&type=2'">{{ item }}</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="product.html?key=fountain" title="Product">FOUNTAIN</a>
+                            <a href="product.html?key=fountain&type=1" title="Product">FOUNTAIN</a>
                         </li>
                         <li>
                             <a href="aboutUs.html" title="About Us">ABOUT US</a>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </header>
-    <div class="content son_con">
+    <div class="content son_con" id="content">
         <div class="clearfix"></div>
         <div id="top_bg" class="top_bg">
             <img src="img/topbg.jpg">
@@ -187,8 +187,8 @@
                                     <br>
                                     Categories: {{ item.Categories }}
                                 </p>
-                                <a class="open-modal l-btn btn-o">Get Price</a>
-                                <a class="l-btn" href="mailto:sales@you-fine.com">Email Us</a>
+                                <a class="open-modal l-btn btn-o getbtn" onclick="showForm()">Get Price</a>
+                                <a class="l-btn" href="mailto:lida1140439@outlook.com">Email Us</a>
                             </div>
                         </li>
                     </ul>
@@ -207,6 +207,47 @@
             <div class="clearfix"></div>
         </div>
         <div class="clearfix"></div>
+    </div>
+    <div class="getprice-bg" style="display: none;">
+        <div class="getprice">
+            <div class="close-btn" onclick="closeForm()">X</div>
+            <div class="md_con" style="margin: 50px auto;">
+                <div class="md_bd">
+                    <div class="md_pro_cont">
+                        <div class="md_pro_tel">+86 19831290383</div>
+                        <div class="md_pro_mail">
+                            <a href="lida1140439@outlook.com">sales@xin-tuo.com</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <form id="contactForm" method="post" name="contact" data-netlify="true" action="thanks.html">
+                        <label>
+                            <span> Your Name:</span>
+                            <input type="text" name="name" placeholder="Name" required minlength="2">
+                        </label>
+                        <label>
+                            <span> Your E-mail:</span>
+                            <input type="text" id="email" name="email" placeholder="E-mail">
+                            <i>*</i>
+                        </label>
+                        <label>
+                            <span> Tel / WhatsApp:</span>
+                            <input type="text" name="tel" placeholder=" Tel / WhatsApp:">
+                        </label>
+                        <label>
+                            <label for="message">
+                                <span> Content</span>
+                                <textarea name="message" required id="message" cols="30" rows="10" placeholder="the sculpture you prefer or requirements"></textarea>
+                                <i>*</i>
+                            </label>
+                            <div class="tc">
+                                <input type="submit" name="submit2" id="submit2" value="Send A Message">
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer">
@@ -288,5 +329,7 @@
     <script src="js/productLeftNav.js"></script>
     <script src="js/product.js"></script>
     <script src="js/productlist.js"></script>
+    <script src="js/showform.js"></script>
+    <script src="js/postForms.js"></script>
 </body>
 </html>
