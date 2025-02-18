@@ -195,15 +195,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <form method="post" name="contact" data-netlify="true" action="thanks.html">
+                            <form id="contactForm" method="post" name="contact" data-netlify="true" action="thanks.html">
                                 <input type="hidden" name="lang" value="en">
                                 <label>
                                     <span> Your Name:</span>
-                                    <input type="text" name="name" placeholder="Name" required minlength="2">
+                                    <input type="text" name="name" placeholder="Name">
                                 </label>
                                 <label>
                                     <span> Your E-mail:</span>
-                                    <input type="text" name="email" placeholder="E-mail" required>
+                                    <input type="text" id="email" name="email" placeholder="E-mail">
                                     <i>*</i>
                                 </label>
                                 <label>
@@ -213,10 +213,10 @@
                                 <label>
                                     <label for="message">
                                         <span> Content</span>
-                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="the sculpture you prefer or requirements"></textarea>
+                                        <textarea name="message" required id="message" cols="30" rows="10" placeholder="the sculpture you prefer or requirements"></textarea>
                                         <i>*</i>
                                     </label>
-                                    <input type="hidden" name="form-name" value="contact" />
+                                    <input type="hidden" name="form-name" value="contact"/>
                                     <div class="tc">
                                         <input type="submit" name="submit2" id="submit2" value="Send A Message">
                                     </div>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="help_menu">
                     <h2 class="footer_menu_title">GET A QUOTE</h2>
-                    <form action="mailto:1140439525@qq.com" method="POST" enctype="text/plain">
+                    <form action="#" method="POST" enctype="text/plain">
                         <input type="text" name="name" class="account_name" placeholder="Name:"/>
                         <input type="email" name="email" class="account_email" placeholder="Email:"/>
                         <textarea name="message" id="message_text" placeholder="Message:"></textarea>
@@ -296,5 +296,6 @@
         </div>
     </footer>
     <script src="js/son_slider.js"></script>
+    <script src="js/postForms.js"></script>
 </body>
 </html>
