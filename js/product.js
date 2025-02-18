@@ -274,4 +274,109 @@ var tongdata = [
             'img/bronze/guanyin-4.jpg',
         ]
     },
+    {   
+        id: 12,
+        name:'Customize Life Sized Fiberglass Super Mario statue',
+        num: 'KWSD-055',
+        Material: 'fiberglass/resin/stainless steel',
+        type: 'Fiberglass mario statue sculpture',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: 'period: 30-45days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'Strong wooden package',
+        Categories: ' Cartoon Statue, Fiberglass Sculpture',
+        introduction: [
+            'This Mario fiberglass statue, meticulously crafted by a master artisan, brings every detail to life.',
+            'Mario’s iconic red overalls and blue work clothes areantly colored, as if he has just experienced an adventure in the Mushroom Kingdom.',
+            'The statue is made of high-quality fiberglass, which is durable, waterproof, and sun. Whether placed in an indoor study, game room, or outdoor courtyard, garden, it can perfectly blend into the environment and become a unique scenic line. It is only a decoration but also a precious collection of childhood game memories.',
+            'We have made a lot of the popular statues. Please contact us for more details, i would like to share you more of our statues pictures for you choose from.'
+        ],
+        img: [
+            'img/bronze/mario-1.jpg',
+            'img/bronze/mario-2.jpg',
+            'img/bronze/mario-3.jpg',
+            'img/bronze/mario-4.jpg',
+        ]
+    },
+    {   
+        id: 13,
+        name:'Bronze fishing sculpture',
+        num: 'YSMD-066',
+        Material: 'Bronze/ Brass/ Copper',
+        type: 'Bronze fishing sculpture',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: 'period: 30-45days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'Strong wooden package',
+        Categories: 'Bronze Sculpture, Sport Statue',
+        introduction: [
+            'This bronze sculpture of a child fishing depicts a little boy wearing a domed hat, bending over to admire his fresh catch.',
+            'He is sitting on a flat base still holding his bronze fishing rod and bronze fish.It is suitable for placement next to the park pond.',
+            'This sculpture is made of bronze, using the lost wax method to ensure the highest quality and excellent detail. The hand-applied bronze patina makes the and his fishing rod even more perfect.',
+            'Xintuo Sculpture focuses on creating high-quality figure sculpture projects. Our figure sculpture cover a variety of styles and sizes. Each work embodies the hard work and exquisite skills of craftsmen.'
+        ],
+        img: [
+            'img/bronze/fishing-1.jpg',
+            'img/bronze/fishing-2.jpg',
+            'img/bronze/fishing-3.jpg',
+            'img/bronze/fishing-4.jpg',
+            'img/bronze/fishing-5.jpg',
+        ]
+    },
+    {   
+        id: 14,
+        name:'Outdoor decoration life-size bull statue',
+        num: 'BCDS-69',
+        Material: 'Bronze/ Brass/ Copper',
+        type: 'fiberglass bull sculpture',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: ' period: 15-35days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'strong wooden cases or iron frame boxes.',
+        Categories: 'Fiberglass bull statue, Fiberglass Sculpture',
+        introduction: [
+            "The bull de wall street is crafted with precision and artistic style, and the intricate details in the sculpture highlight the artist’s dedication to realism, making it engaging work of art.",
+            "The bull, often a symbol of determination and strength, is presented in a way that emphasizes its robustness and command.",
+            "The texture and contours the sculpture bring the bull to life, showcasing the interplay of light and shadow, and enhancing its three-dimensional quality.",
+            "This bull sculpture is more than just a decorative; it is a symbol of vitality and endurance. It would make an outstanding addition to any collection, whether displayed in a home, office, or public space."
+        ],
+        img: [
+            'img/bronze/fiberglass-bull-1.jpg',
+            'img/bronze/fiberglass-bull-2.jpg',
+            'img/bronze/fiberglass-bull-3.jpg',
+            'img/bronze/fiberglass-bull-4.jpg',
+        ]
+    },
+    {   
+        id: 15,
+        name:'Outdoor decoration garden Buddha sculpture',
+        num: 'XTSD-222',
+        Material: 'Natural marble',
+        type: 'Marble Buddha Statue sculpture',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: ' period: 15-35days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'Strong wooden package',
+        Categories: ' Marble Buddha Statue, Marble Carving Sculpture',
+        introduction: [
+            "This outdoor garden Buddha sculpture is exquisitely crafted, embodying tranquility and spiritual depthThe statue’s intricate details highlight the artisan’s skill, from the delicate facial features to the flowing robes that drape gracefully.",
+            "The Buddha’s expression is calm and meditative, evoking a sense of peace and enlightenment. The simplicity of the background enhances the statue’s sacred presence, making it a perfect addition to any home or sacred space.",
+            "This Buddha statue is not only a beautiful piece of art but also a symbol of tranquility and mindfulness, ideal for those seeking to create a serene and contemplative environment.",
+            "This outdoor decoration buddha statue showcases a magnificent Buddha statue, exquisitely carved to depict the tranquility and wisdom of the Buddha."
+        ],
+        img: [
+            'img/bronze/marble-Buddha-1.jpg',
+            'img/bronze/marble-Buddha-2.jpg',
+            'img/bronze/marble-Buddha-3.jpg',
+            'img/bronze/marble-Buddha-4.jpg',
+        ]
+    },
 ]

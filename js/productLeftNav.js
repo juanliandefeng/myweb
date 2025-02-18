@@ -12,8 +12,9 @@ var leftNav = new Vue({
     methods: {
         fn (){
             var URLdata = new URLSearchParams(window.location.search)
-            var URLdata1 = URLdata.get('key').toUpperCase()
-            this.title = URLdata1
+            if (URLdata.get('key')){
+                this.title = URLdata.get('key').toUpperCase()
+            }
         }
     },
     mounted (){
