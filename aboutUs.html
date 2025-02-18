@@ -41,33 +41,33 @@
                     </div>
                     <ul class="posrel">
                         <li class="active">
-                            <a href="index.html">HOME</a>
+                            <a href="index.html" title="Home">HOME</a>
                         </li>
                         <li @mouseenter="show" @mouseleave="hide">
-                            <a href="index.html">
+                            <a href="product.html">
                                 PRODUCTS
                                 <span class="arrow"></span>
                             </a>
                             <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
                                 <li v-for="(item,index) in navList" :key="index + 1">
-                                    <a href="">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?key=' + item.productClass + '&type=1' ">{{ item.productClass }}</a>
                                     <ul>
-                                        <li v-for="(item,index) in item.productList"><a>{{ item }}</a></li>
+                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item + '&type=2'">{{ item }}</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">FOUNTAIN</a>
+                            <a href="product.html?key=fountain&type=1" title="Product">FOUNTAIN</a>
                         </li>
                         <li>
-                            <a href="">ABOUT US</a>
+                            <a href="aboutUs.html" title="About Us">ABOUT US</a>
                         </li>
                         <li>
-                            <a href="">BLOG</a>
+                            <a href="blog.html" title="Blog">BLOG</a>
                         </li>
                         <li>
-                            <a href="">CONTACT</a>
+                            <a href="contact.html" title="Contact Us">CONTACT</a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -195,15 +195,15 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <form name="contact" method="POST" data-netlify="true" action="/thanks.html">
+                            <form method="post" name="contact" data-netlify="true" action="thanks.html">
                                 <input type="hidden" name="lang" value="en">
                                 <label>
                                     <span> Your Name:</span>
-                                    <input type="text" name="name" placeholder="Name">
+                                    <input type="text" name="name" placeholder="Name" required minlength="2">
                                 </label>
                                 <label>
                                     <span> Your E-mail:</span>
-                                    <input type="text" name="email" placeholder="E-mail">
+                                    <input type="text" name="email" placeholder="E-mail" required>
                                     <i>*</i>
                                 </label>
                                 <label>
@@ -211,11 +211,12 @@
                                     <input type="text" name="tel" placeholder=" Tel / WhatsApp:">
                                 </label>
                                 <label>
-                                    <label>
+                                    <label for="message">
                                         <span> Content</span>
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="the sculpture you prefer or requirements"></textarea>
                                         <i>*</i>
                                     </label>
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div class="tc">
                                         <input type="submit" name="submit2" id="submit2" value="Send A Message">
                                     </div>
