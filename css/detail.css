@@ -7,6 +7,10 @@
 }
 .Magic {
     position: relative;
+    overflow: hidden;
+}
+.Magic img {
+    width: 100%;
 }
 .Magic .prev{
     left: 0;

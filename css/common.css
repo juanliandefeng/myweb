@@ -669,6 +669,9 @@ body{
     padding-bottom: 25px;
     position: relative;
 }
+.news_li_pic a img {
+    width: 100%;
+}
 .news_li_text {
     width: 50%;
     float: right;
@@ -699,4 +702,43 @@ body{
     border: 1px solid #ccc;
     font-size: 15px !important;
     margin-top: 30px;
+}
+/* get price form show */
+.getprice-bg {
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.getprice {
+    max-width: 800px;
+    border-radius: 5px;
+    display: block;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: .4s;
+    animation-name: animatetop;
+    animation-duration: .4s;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 100%;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    z-index: 1;
 }
