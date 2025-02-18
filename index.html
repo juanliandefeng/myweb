@@ -37,21 +37,21 @@
                             <a href="#" title="Home">HOME</a>
                         </li>
                         <li @mouseenter="show" @mouseleave="hide">
-                            <a href="product.html" title="Scoulpture Product">
+                            <a href="product.html" title="Sculpture Product">
                                 PRODUCT
                                 <span class="arrow"></span>
                             </a>
                             <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
                                 <li v-for="(item,index) in navList" :key="index + 1">
-                                    <a :href="url + item.productClass">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?key=' + item.productClass + '&type=1' ">{{ item.productClass }}</a>
                                     <ul>
-                                        <li v-for="(item,index) in item.productList"><a :href="url + item">{{ item }}</a></li>
+                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item + '&type=2'">{{ item }}</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="product.html?key=fountain" title="Product">FOUNTAIN</a>
+                            <a href="product.html?key=fountain&type=1" title="Product">FOUNTAIN</a>
                         </li>
                         <li>
                             <a href="aboutUs.html"  title="About Us">ABOUT US</a>
