@@ -11,7 +11,7 @@ const products = new Vue({
         show (){
             this.isTrue = true
             this.isFalse = false
-            console.log(this.isTrue)
+            
         },
         hide (){
             this.isTrue = false
