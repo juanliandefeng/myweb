@@ -686,6 +686,12 @@ body{
     font-size: 21px;
     margin-top: 20px;
 }
+.news_li_text .read_more {
+    font-size: 17px;
+    display: block;
+    margin-top: 15px;
+    color: #1d2087;
+}
 .news_li p {
     line-height: 33px;
     margin-top: 20px;
@@ -741,4 +747,12 @@ body{
     width: 34px;
     text-align: center;
     z-index: 1;
+}
+
+/* blog-style */
+.txt_style {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
 }
