@@ -160,42 +160,25 @@
                     <ul>
                         <li v-for="(item,index) in pageList" class="news_li">
                             <div class="news_li_pic">
-                                <a :href="url + item.id + parameter + item.name">
-                                    <img :src="item.img[0]" :alt="item.name">
+                                <a :href="url + item.id">
+                                    <img :src="item.img[0]" :alt="item.title">
                                 </a>
                             </div>
                             <div class="news_li_text">
                                 <h2>
-                                    <a :href="url + item.id + parameter + item.name" :title="item.name" target="_blank">
-                                        {{ item.name }}
+                                    <a :href="url + item.id" :title="item.title" target="_blank">
+                                        {{ item.title }}
                                     </a>
                                 </h2>
-                                <p>
-                                    item num: {{ item.num }}
-                                    <br>
-                                    price: {{ item.price }}
-                                    <br>
-                                    Material: {{ item.Material }}
-                                    <br>
-                                    delivery: {{ item.delivery }}
-                                    <br>
-                                    Payment: {{ item.Payment }}
-                                    <br>
-                                    PackageIn: {{ item.PackageIn }}
-                                    <br>
-                                    PackageOut: {{ item.PackageOut }}
-                                    <br>
-                                    Categories: {{ item.Categories }}
-                                </p>
-                                <a class="open-modal l-btn btn-o">Get Price</a>
-                                <a class="l-btn" href="mailto:lida1140439@outlook.com">Email Us</a>
+                                <p class="txt_style">{{ item.text[0] }}</p>
+                                <a class="read_more" :href="url + item.id">Read Full Article</a>
                             </div>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
                     <div class="pager">
                         <ul>
-                            <li v-for="lis in pageNum" @click="searchPage(lis)">{{ lis }}</li>
+                            <li v-for="lis in pageNum" @click="searchPage(lis)" :class="{ active: currentPage == lis}">{{ lis }}</li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
@@ -274,7 +257,7 @@
     <script src="js/data.js"></script>
     <script src="js/header.js"></script>
     <script src="js/productLeftNav.js"></script>
-    <script src="js/product.js"></script>
-    <script src="js/productlist.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/blogControl.js"></script>
 </body>
 </html>
