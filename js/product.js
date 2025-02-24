@@ -379,4 +379,29 @@ var tongdata = [
             'img/bronze/marble-Buddha-4.jpg',
         ]
     },
+    {   
+        id: 16,
+        name:'Life Size Marble Big Mermaid Garden Statue',
+        num: 'MRED-011',
+        Material: 'Marble/Bronze/Brass',
+        type: 'Marble Mermaid Statue sculpture',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: ' period: 15-35days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'Strong wooden package',
+        Categories: ' Marble Buddha Statue, Marble Carving Sculpture',
+        introduction: [
+            "This big mermaid statue uses high-quality marble to ensure the durability and beauty of the statue. Seated, standing or lying down, the statue is designed to show the mermaid sitting on a rock with her tail naturally lowered and holding a shell or other Marine element in her hands. The mermaid’s scales, hair and facial expressions have been carefully sculpted to look realistic.",
+            "This Bronze mermaid sculpture is suitable for placing in gardens, courtyards, villas or art galleries, which can enhance the beauty of the garden or courtyard, adding the mystery and elegant atmosphere of the space. This life-size marble statue of the Great Mermaid is not only a work of art, but can also add a unique charm and cultural touch to your garden or courtyard.",
+            "In addition to the aforementioned products, we offer a variety of other styles for you to choose from. Naturally, we also support customized images in any style and size.",
+        ],
+        img: [
+            'img/bronze/marble-mermaid-1.jpg',
+            'img/bronze/marble-mermaid-2.jpg',
+            'img/bronze/marble-mermaid-3.jpg',
+            'img/bronze/marble-mermaid-4.jpg',
+        ]
+    },
 ]
