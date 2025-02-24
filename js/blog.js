@@ -66,4 +66,51 @@ var blogList = [
             'img/blog/dolphin-6.jpg',
         ]
     },
+    {
+        id: 4,
+        date: 'Feb 20, 2025',
+        title: 'Crane Statue for garden',
+        text: [
+
+            'In traditional Chinese culture, cranes are regarded as symbols of auspiciousness and longevity. It not only represents noble character, but also carries people’s yearning for a better life. Placing the crane statue in the courtyard not only adds a natural beauty, but also fills the living environment with cultural atmosphere and artistic charm. This article will focus on the theme of “Crane Statue” and explore how to make your courtyard an ideal and desirable residence through careful design and arrangement.',
+            'In ancient Chinese literary works, cranes are often depicted as divine birds capable of flying over mountains and rivers, crossing clouds and reaching the heavens. This image endows cranes with the beautiful symbolism of transcendence, longevity, and health. Placing a crane statue at home is not only an aesthetic choice, but also a symbol of the owner’s good wishes for the health and happiness of their family.',
+            'Cranes are known for their pure and flawless feathers and graceful posture, symbolizing purity and nobility. The ancients often used the phrase ‘stand out from the crowd’ to describe individuals who possess both moral integrity and talent, and stand out from the crowd. Therefore, placing crane statues in the courtyard also reflects the owner’s pursuit of excellence and reverence for virtues in their life attitude.',
+            'With the development of the times, the design style of crane statues is also constantly evolving. From classical realism to abstract simplicity, each style has its unique charm. The traditional style of crane carving usually adopts fine manual carving techniques, pays attention to the expression of details, and strives to restore the true form of the crane; Modern style, on the other hand, places more emphasis on the relationship between form and space, conveying the spiritual connotation of cranes through concise lines and bold shapes.',
+            'The materials of crane statues are diverse, commonly including stone, metal, ceramics, etc. Different materials not only determine the texture of sculptures, but also affect their weather resistance and maintenance costs. For example, stone crane carvings have strong durability and are suitable for long-term outdoor displays; The metal crane sculpture has a bright luster and is particularly outstanding when paired with lighting at night; Ceramic crane carvings are lightweight and exquisite, making them more suitable for indoor or semi enclosed spaces.',
+            'Crane and water have an inseparable bond. In courtyard design, it is possible to consider placing crane statues by the pond or fountain to create an atmosphere of “cranes singing on the nine high mountains”. When a gentle breeze blows, the water surface ripples layer by layer, and cranes seem to dance gracefully in the water, adding a touch of liveliness and vitality to the entire space.',
+            'Appropriate plant combinations can make crane statues more vivid. You can choose some low shrubs or herbaceous plants as the background, which will not obstruct the line of sight and can form a good visual hierarchy. In spring, cherry blossoms, azaleas and other flowers can be planted, while in summer, green leafy plants are the main ones. In autumn and winter, evergreen tree species can be selected to ensure beautiful scenery throughout the four seasons.',
+
+
+        ],
+        img: [
+            'img/blog/crane-1.jpg',
+            'img/blog/crane-2.jpg',
+            'img/blog/crane-3.jpg',
+            'img/blog/crane-4.jpg',
+            'img/blog/crane-5.jpg',
+        ]
+    },
+    {
+        id: 5,
+        date: 'Feb 20, 2025',
+        title: 'Modern Mermaid Art: From Legend to Reality',
+        text: [
+
+            'Modern Mermaid Art is not just a simple representation of the traditional mermaid image, it integrates the values, aesthetic concepts, and technological means of contemporary society, endowing this classic theme with new vitality. Artists use rich imagination and innovative techniques to place mermaids in a modern context, exploring the subtle relationships between humans and nature, reality and fantasy.',
+            'Since ancient times, the mysterious image of mermaids has frequently appeared in legends and literary works around the world. They are often depicted as half human, half fish creatures with enchanting singing and beauty, capable of arousing sailors’ fantasies and even causing shipwrecks. Although most people believe that mermaids are just fictional story characters, in modern times, through Modern Mermaid Art, we can achieve a “real” mermaid experience to some extent – such as by admiring those exquisite mermaid sculptures.',
+            'The history of mermaids can be traced back thousands of years, and they have different forms of expression in different cultures. For example, in Greek mythology, the Siren is a creature that is half human and half bird, often regarded as the precursor to mermaids. In ancient Chinese legends, there are records of “mermaids” who were able to weave priceless treasures. These stories are not only curious explorations of the unknown, but also reflect humanity’s reverence and romantic imagination for the natural world.',
+            'With the changing times, people’s understanding of mermaids is constantly evolving. In today’s society, artists are no longer satisfied with relying solely on words to describe the charm of mermaids, but instead concretize it through various media. Among them, sculpture, as an eternal art form, has become one of the best carriers to showcase the charm of mermaids. Artists from all over the world have created vivid mermaid sculptures with their unique perspectives and techniques.',
+            'With the development of technology, people can now have close contact with “mermaids” in some aquariums or theme parks. These professionally trained actors wear specially designed costumes and dance gracefully in the water, simulating the living habits of mermaids. This experience not only adds fun to tourists, but also deepens people’s understanding of marine life.',
+            'In the digital age, virtual reality (VR) technology provides people with another way to interact with mermaids. Through VR helmets, users can immerse themselves in the underwater world and have intimate contact with virtual mermaids. This immersive experience not only broadens people’s cognitive boundaries of the mermaid image, but also provides infinite possibilities for future artistic creation.',
+            'In summary, although there are no true mermaids in reality, we can feel their existence through various ways. From ancient legends and stories to modern art creation, from physical sculptures to virtual reality experiences, mermaids have become a bridge connecting the past and the future. They are not only the source of creativity for artists, but also a symbol of people’s beautiful wishes in their hearts. When we stand in front of those exquisite mermaid sculptures, perhaps we can hear the distant and ancient story echoing in our ears, making us believe again that this world is full of miracles and magic.',
+
+
+        ],
+        img: [
+            'img/blog/mermaid-1.jpg',
+            'img/blog/mermaid-2.jpg',
+            'img/blog/mermaid-3.jpg',
+            'img/blog/mermaid-4.jpg',
+        ]
+    },
 ]
