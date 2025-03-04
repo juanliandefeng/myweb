@@ -7,13 +7,15 @@ var leftNav = new Vue({
 var leftNav = new Vue({
     el: '#middle_top',
     data: {
-        title: 'PRODUCT'
+        title: 'PRODUCT',
+        msg: tongdata
     },
     methods: {
         fn (){
             var URLdata = new URLSearchParams(window.location.search)
-            if (URLdata.get('key')){
-                this.title = URLdata.get('key').toUpperCase()
+            const id = URLdata.get('id')
+            if (id){
+                this.title = this.msg.find( item => item.id == id).title.toUpperCase()
             }
         }
     },
