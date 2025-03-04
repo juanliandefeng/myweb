@@ -456,4 +456,30 @@ var tongdata = [
             'img/bronze/marble-angel-4.jpg',
         ]
     },
+    {   
+        id: 19,
+        name:'Bronze Lion Statues Outdoor',
+        num: 'MRED-011',
+        Material: 'Bronze/ Brass/ Copper',
+        type: 'bronze lion statue',
+        size: 'Life size or as requested',
+        price: 'USD 800-3900 per piece',
+        Payment: 'T/T, PayPal, Western Union or other ways',
+        delivery: ' period: 15-35days',
+        PackageIn: 'soft plastic foam/ blanket',
+        PackageOut: 'Strong wooden package',
+        Categories: ' Fountain Construction',
+        introduction: [
+            "This is a pair of bronze lion statues. Their image is lying flat, with one mouth slightly open, seeming to make a majestic roar, while the other has a tightly closed mouth and a forward tail, giving the overall appearance both majestic and leisurely. This posture not only showcases the strength and dignity of a lion, but also reveals a approachable affinity. ",
+            "The production process of Bronze HSBC Lion Statue usually includes multiple steps such as model making, wax casting, lost wax casting, and polishing. Firstly, artists will create clay sculpture prototypes based on design drawings or clay models; Next, using the lost wax technique, the wax replicated model is wrapped in refractory material and heated to melt off the wax, forming a cavity, and then injected with melted bronze liquid; After cooling and solidifying, the external material is removed to obtain the initial prototype of the bronze sculpture. Subsequently, it needs to undergo fine polishing and coloring treatment to finally present the delicate texture we see.",
+            "Xintuo Sculpture Company is committed to providing customers with high-quality sculpture works, including various lion sculptures. Whether you prefer traditional style or modern design, we have ready-made products for you to choose from. At the same time, we also provide customized services to design and produce unique lion sculptures according to your specific requirements, ensuring that every detail meets your expectations.",
+            'Angel sculpture has a wide range of applications in real life. Firstly, they are often used in churches, temples, and other religious places as objects of worship and admiration for believers during religious activities and rituals, enhancing the religious atmosphere and inspiring devout faith.'
+        ],
+        img: [
+            'img/bronze/marble-angel-1.jpg',
+            'img/bronze/marble-angel-2.jpg',
+            'img/bronze/marble-angel-3.jpg',
+            'img/bronze/marble-angel-4.jpg',
+        ]
+    },
 ]
