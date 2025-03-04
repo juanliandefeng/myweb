@@ -101,19 +101,17 @@
                 </div>
                 <div class="leftsidebar">
                     <h3>PRODUCT</h3>
-                    <div class="list">
+                    <div id="nav-list" class="list">
                         <ul>
-                            <li>
-                                <a href="" title="Company Profile">Company Profile</a>
-                            </li>
-                            <li>
-                                <a href="" title="Office Photos">Process</a>
-                            </li>
-                            <li>
-                                <a href="" title="Customer">Customer</a>
-                            </li>
-                            <li>
-                                <a href="" title="Customer Feedback">Customer Feedback</a>
+                            <li v-for="(item, index) in navList">
+                                <p>
+                                    <a :href=" 'product.html?key=' + item.productClass">{{ item.productClass }}</a>
+                                </p>
+                                <div class="menu_body">
+                                    <a v-for="(item, index) in item.productList" :href="'product.html?key=' + item">
+                                        {{ item }}
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
@@ -210,7 +208,7 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="md_con">
-                            <h2>Product introduction</h2>
+                            <h2>{{ thisProduct.name }}</h2>
                             <img :src="img[0]" alt="thisProduct.name" loading="lazy">
                             <p>{{ text[0] }}</p>
                             <img :src="img[1]" loading="lazy">
@@ -296,6 +294,8 @@
     </footer>
     <script src="js/product.js"></script>
     <script src="js/vue.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/productLeftNav.js"></script>
     <script>
         var app = new Vue({
             el: '#app',
