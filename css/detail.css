@@ -6,11 +6,14 @@
     float: left;
 }
 .Magic {
+	width: 100%;
+	aspect-ratio: 1/1;
     position: relative;
     overflow: hidden;
 }
 .Magic img {
     width: 100%;
+	height: 100%;
 }
 .Magic .prev{
     left: 0;
@@ -42,8 +45,9 @@
 .cf li.active{
     border: 3px solid #e0761c;
 }
-.Magic .listBox li img{
+.listBox li img{
     width: 100%;
+	aspect-ratio: 1/1;
 }
 .gallery_right {
     width: 48%;
