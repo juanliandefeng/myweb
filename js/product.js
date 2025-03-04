@@ -2,6 +2,7 @@ var tongdata = [
     {   
         id: 1,
         name:'Life Size Bronze Golfer Statue',
+        title: 'Bronze Golfer Statue',
         num: 'FGTS-001',
         Material: 'bronze',
         type: 'bronze Golfer other sculpture',
@@ -27,6 +28,7 @@ var tongdata = [
     {   
         id:2,
         name:'Bronze Cherub Angel Garden Statues',
+        title: 'Bronze Cherub Angel Statue',
         num: 'XTSD-001',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze angel garden sculpture',
@@ -52,6 +54,7 @@ var tongdata = [
     {   
         id: 3,
         name:'Bronze Life Size Bear Sculpture Fighting With Eagle',
+        title: 'Bronze Bear Eagle Statue',
         num: 'QIXY-001',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze bear Eagle sculpture',
@@ -77,6 +80,7 @@ var tongdata = [
     {   
         id: 4,
         name:'Bronze ballet dancer figurines',
+        title: 'Bronze ballet dancer Statue',
         num: 'QIXY-201',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze ballet dancer sculpture',
@@ -102,6 +106,7 @@ var tongdata = [
     {   
         id: 5,
         name:'Bronze Girl Reading Sculpture Garden Statue',
+        title: 'Bronze Girl Statue',
         num: 'QIXY-261',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze Girl Reading sculpture',
@@ -127,6 +132,7 @@ var tongdata = [
     {   
         id: 6,
         name:'Animal Garden Sculpture Bronze Doe and Fawn Statue',
+        title: 'Bronze Animal Doe Statue',
         num: 'QIXY-041',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze Animal Doe sculpture',
@@ -152,6 +158,7 @@ var tongdata = [
     {   
         id: 7,
         name:'Life Size Bronze Paired Elephant Statue at Entrance',
+        title: 'Bronze Elephant Statue',
         num: 'QIXY-022',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze Animal Elephant sculpture',
@@ -177,6 +184,7 @@ var tongdata = [
     {   
         id: 8,
         name:'Outdoor Bronze Woman Water Fountain',
+        title: 'Bronze Fountain Statue',
         num: 'QIXY-022',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze Woman Fountain sculpture',
@@ -202,6 +210,7 @@ var tongdata = [
     {   
         id: 9,
         name:'Life size bronze horse sculpture',
+        title: 'Bronze horse Statue',
         num: 'FGTS-022',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze horse sculpture',
@@ -227,6 +236,7 @@ var tongdata = [
     {   
         id: 10,
         name:'Abstract bronze sculpture for sale',
+        title: 'Bronze Abstract Statue',
         num: 'CXDS-001',
         Material: 'Bronze/ Brass / Copper',
         type: 'bronze Abstract other sculpture',
@@ -252,6 +262,7 @@ var tongdata = [
     {   
         id: 11,
         name:'Fiberglass Large seated kuan yin statue',
+        title: 'Fiberglass kuan yin Statue',
         num: 'CXDS-001',
         Material: 'Fiberglass',
         type: 'Fiberglass kuan yin statue sculpture',
@@ -277,6 +288,7 @@ var tongdata = [
     {   
         id: 12,
         name:'Customize Life Sized Fiberglass Super Mario statue',
+        title: 'Fiberglass Super Mario Statue',
         num: 'KWSD-055',
         Material: 'fiberglass/resin/stainless steel',
         type: 'Fiberglass mario statue sculpture',
@@ -303,6 +315,7 @@ var tongdata = [
     {   
         id: 13,
         name:'Bronze fishing sculpture',
+        title: 'Bronze fishing Statue',
         num: 'YSMD-066',
         Material: 'Bronze/ Brass/ Copper',
         type: 'Bronze fishing sculpture',
@@ -330,6 +343,7 @@ var tongdata = [
     {   
         id: 14,
         name:'Outdoor decoration life-size bull statue',
+        title: 'Bronze bull Statue',
         num: 'BCDS-69',
         Material: 'Bronze/ Brass/ Copper',
         type: 'fiberglass bull sculpture',
@@ -356,6 +370,7 @@ var tongdata = [
     {   
         id: 15,
         name:'Outdoor decoration garden Buddha sculpture',
+        title: 'marble Buddha Statue',
         num: 'XTSD-222',
         Material: 'Natural marble',
         type: 'Marble Buddha Statue sculpture',
@@ -382,6 +397,7 @@ var tongdata = [
     {   
         id: 16,
         name:'Life Size Marble Big Mermaid Garden Statue',
+        title: 'marble Mermaid Statue',
         num: 'MRED-011',
         Material: 'Marble/Bronze/Brass',
         type: 'Marble Mermaid Statue sculpture',
@@ -407,6 +423,7 @@ var tongdata = [
     {   
         id: 17,
         name:'musical dancing fountain',
+        title: 'Metal fountain Statue',
         num: 'MRED-011',
         Material: 'Metal',
         type: 'Metal fountain sculpture',
@@ -433,6 +450,7 @@ var tongdata = [
     {   
         id: 18,
         name:'Marble carving kneeling praying angel statue',
+        title: 'Marble angel Statue',
         num: 'MRED-011',
         Material: 'Marble',
         type: 'Marble angel statue',
@@ -459,6 +477,7 @@ var tongdata = [
     {   
         id: 19,
         name:'Bronze Lion Statues Outdoor',
+        title: 'Bronze Lion Statue',
         num: 'MRED-011',
         Material: 'Bronze/ Brass/ Copper',
         type: 'bronze lion statue',
