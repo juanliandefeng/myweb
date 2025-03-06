@@ -478,7 +478,7 @@ var tongdata = [
         id: 19,
         name:'Bronze Lion Statues Outdoor',
         title: 'Bronze Lion Statue',
-        num: 'MRED-011',
+        num: 'MRED-019',
         Material: 'Bronze/ Brass/ Copper',
         type: 'bronze lion statue',
         size: 'Life size or as requested',
@@ -495,10 +495,10 @@ var tongdata = [
             'Angel sculpture has a wide range of applications in real life. Firstly, they are often used in churches, temples, and other religious places as objects of worship and admiration for believers during religious activities and rituals, enhancing the religious atmosphere and inspiring devout faith.'
         ],
         img: [
-            'img/bronze/marble-angel-1.jpg',
-            'img/bronze/marble-angel-2.jpg',
-            'img/bronze/marble-angel-3.jpg',
-            'img/bronze/marble-angel-4.jpg',
+            'img/bronze/bronze-lion-1.jpg',
+            'img/bronze/bronze-lion-2.jpg',
+            'img/bronze/bronze-lion-3.jpg',
+            'img/bronze/bronze-lion-4.jpg',
         ]
     },
 ]
