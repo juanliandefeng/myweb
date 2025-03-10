@@ -41,11 +41,11 @@
                                 PRODUCT
                                 <span class="arrow"></span>
                             </a>
-                            <ul v-bind:class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
+                            <ul :class="{'yes':isTrue,'no':isFalse}" class="prodect_type">
                                 <li v-for="(item,index) in navList" :key="index + 1">
-                                    <a :href=" 'product.html?key=' + item.productClass + '&type=1' ">{{ item.productClass }}</a>
+                                    <a :href=" 'product.html?type=1' + '&key=' + item.productClass ">{{ item.productClass }}</a>
                                     <ul>
-                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?key=' + item + '&type=2'">{{ item }}</a></li>
+                                        <li v-for="(item,index) in item.productList"><a :href=" 'product.html?type=2' + '&key=' + item">{{ item }}</a></li>
                                     </ul>
                                 </li>
                             </ul>
