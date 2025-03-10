@@ -15,7 +15,6 @@ const app = new Vue({
             var URLdata = new URLSearchParams(window.location.search)
             var URLdata1 = URLdata.get('key')
             var URLdata3 = URLdata.get('type')
-            this.productName = URLdata1
             //console.log(URLdata1)
             
             if(URLdata1){
@@ -34,6 +33,10 @@ const app = new Vue({
                 }
                 
                 this.listMessage = this.products
+                if(this.listMessage.length <= 0){
+                    alert("No Data")
+                    return window.history.back()
+                }
             }else {
                 this.listMessage = tongdata
             }
@@ -59,6 +62,5 @@ const app = new Vue({
     mounted (){
         this.setMessage()
         this.creatPage()
-        
     }
 })
