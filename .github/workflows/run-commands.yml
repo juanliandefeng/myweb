@@ -1,0 +1,27 @@
+name: Run Terminal Commands
+
+on:
+  push:
+    branches: [ main ]  # 当代码推送到 main 分支时触发
+  pull_request:
+    branches: [ main ]  # 当创建 PR 到 main 分支时触发
+
+jobs:
+  execute-commands:
+    runs-on: ubuntu-latest  # 指定运行环境（可选：ubuntu-latest, windows-latest, macos-latest）
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # 检出代码到 runner
+
+      - name: Run basic commands
+        run: |  # 多行命令
+          echo "Hello GitHub Actions!"
+          ls -la
+          pwd
+
+      - name: Install dependencies
+        run: npm install  # 示例：安装 npm 依赖
+
+      - name: Run tests
+        run: npm test  # 示例：运行测试
