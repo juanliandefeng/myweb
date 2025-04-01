@@ -43,7 +43,7 @@ var shuju = [
             'Marble Planter',
             'Marble Statue',
             'Marble Tiger Statue',
-            'Marble Angle Statue',
+            'Marble Angel Statue',
             'Marble Animal Statue',
             'Marble Bear Statue',
             'Catholic Statue',
